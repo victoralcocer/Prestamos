@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prestamos</title>
+</head>
+<script type="text/javascript" src="new.js"></script>
+<body>
+
+    <h3>Ingreso de usuarios</h3>
+    Introduzca un nombre de usuario: <input type="text" id="usuario"> <input type="button" onclick="ingresar()" value="Ingresar usuario">
+    <div id="ingreso"></div>
+
+    <h3>Préstamo</h3>
+    Emisor del préstamo: <input type="text" id="emisor"><br>
+    Receptor del préstamo: <input type="text" id="receptor"><br>
+    Cantidad: <input type="number" id="cantidad" min="0">
+    <input type="button" value="Realizar préstamo" onclick="prestamo()"><br>
+    <div id="prestamo"></div><br>
+    <input type="button" value="Restaurar balances" onclick="restaurar()"><br><br>
+    <div id="balances"></div>
+
+</body>
+</html>
+
